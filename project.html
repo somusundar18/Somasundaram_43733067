@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOM website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: white;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Sections */
+        .about, .experiences, .contact {
+            padding: 30px;
+        }
+        /* Experience Section */
+        .experience-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .experience-card {
+            background: #f5f5f5;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Contact Section */
+        .contact a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Som</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Experiences</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Training Manager / SME - content preparation; Train the trainer on - Java Full Stack, AWS Cloud etc.; Ed Tech - Training Quality & Auditing.</p>
+    </section>
+    <section class="experiences">
+        <h2>Experiences</h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <h3>Product Consultant</h3>
+                <p>Train the trainer, Content creation and deal crackling.</p>
+            </div>
+            <div class="experience-card">
+                <h3>Training and Production Manager</h3>
+                <p>Taking care of Training Quality, Train the trainer, Session Auditing, Batch Allocation, Trainer Hiring and Batch progression etc.</p>
+            </div>
+            <div class="experience-card">
+                <h3>Training Excellence Manager</h3>
+                <p>Taking care of Training Quality, Train the trainer, Session Auditing, Batch Allocation, Trainer Hiring and Batch progression etc.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email: <a href="somusundaroff@gmail.com">somusundaroff@gmail.com</a></p>
+        <p>Feel free to reach out via phone: <a href="tel:+918838525135">+91 88385 25135</a></p>
+    </section>
+    <footer>
+        <p>© 2025 @Faceprep</p>
+    </footer>
+</body>
+</html>
