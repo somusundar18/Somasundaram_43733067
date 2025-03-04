@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+    <style>
+        
+        body {
+            text-align: center;
+            background:rgb(167, 209, 206);
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgb(218, 199, 199);
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+          
+            padding: 20px 40px;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color:rgb(88, 151, 210);
+        }
+        .menu {
+            font-size: 28px;
+            cursor: pointer;
+        }
+        .container {
+            margin-top: 100px; 
+            padding: 40px;
+        }
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 40px;
+        }
+        .hero-section img {
+            width: 450px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content {
+            text-align: left;
+            max-width: 500px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: orange;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+        }
+        .feature {
+            width: 250px;
+            text-align: center;
+        }
+        .feature img {
+            width: 100px;
+            height: auto;
+        }
+        .footer {
+            background: #f8f8f8;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">Food Order ✅</div>
+        <div class="menu">☰</div>
+    </div>
+
+    <div class="container">
+        <div class="hero-section">
+            <img src="food.jpeg" alt="Delicious Food">
+            <div class="content">
+                <h2>Order Your Favorite Food</h2>
+                <p>Enjoy fresh, healthy, and tasty meals delivered straight to your door.</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <img src="fast.jpeg" alt="Discount">
+                <h3>Exciting Discounts</h3>
+                <p>Get the best offers and save on your favorite meals.</p>
+            </div>
+            <div class="feature">
+                <img src="healthy.jpeg" alt="Healthy Food">
+                <h3>Healthy & Fresh</h3>
+                <p>Eat fresh and stay healthy with our nutritious meals.</p>
+            </div>
+            <div class="feature">
+                <img src="fast.jpeg" alt="Fast Delivery">
+                <h3>Fast Delivery</h3>
+                <p>Your order arrives hot and fresh in no time!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Food Order | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>
