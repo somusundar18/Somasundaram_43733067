@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Connect</title>
+    <!-- Font Awesome CDN for Social Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #c3c6cf; 
+        }
+        header {
+            background-color:#6d6291; 
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 50px auto;
+            width: 80%;
+            margin-left: 10px;
+        }
+        .about-us {
+            width: 50%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: left;
+            margin: left 100px;
+        }
+        .login-section {
+            width: 30%;
+            text-align: center;
+            margin: right 100px;
+        }
+        h2 {
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+        }
+        button:hover {
+            background-color: #ddd;
+        }
+        .footer {
+            background-color: #6d6291;
+            color: white;
+            padding: 15px;
+            margin-top: 50px;
+        }
+        .footer-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .social-btn {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            color: white;
+        }
+        .facebook {
+            background-color: #3b5998;
+        }
+        .linkedin {
+            background-color: #0077b5;
+        }
+        .social-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<header>Student's Connect</header>
+
+<div class="container">
+    <div class="about-us">
+        <h2>About us</h2>
+        <p>
+            Student Connect is an innovative platform designed to streamline and enhance the academic experience for students. It serves as a centralized hub where students can effortlessly access essential resources, collaborate with peers and instructors, and stay organized throughout their studies.
+
+            With features such as assignment tracking, discussion forums, and event updates, Student Connect ensures that students remain informed and engaged. Whether you are managing coursework, seeking academic support, or staying updated with campus activities, this platform provides all the necessary tools in one convenient location.
+            With features such as assignment tracking, discussion forums, and event updates, Student Connect ensures that students remain informed and engaged. Whether you are managing coursework, seeking academic support, or staying updated with campus activities, this platform provides all the necessary tools in one convenient location.
+
+            Our goal is to empower students with the resources they need to excel in their academic endeavors. By fostering connectivity and collaboration, Student Connect helps students stay engaged, informed, and prepared for success in their educational journey.
+        </p>
+    </div>
+
+    <div class="login-section">
+        <h2>New User Login</h2>
+        <button onclick="window.location.href='register.html'">Register</button>
+
+
+        <h2>Existing User Login</h2>
+        <button onclick="window.location.href='login.html'">Login</button>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <p>No copyrights claimed</p>
+    <p>@2147 @SISTPLACEMENT</p>
+
+    <div class="footer-container">
+        <a href="mailto:somusundaroff@gmail.com" style="color: white;">Mail: somusundaroff@gmail.com</a>
+        <a href="https://www.facebook.com" target="_blank">
+            <button class="social-btn facebook"><i class="fab fa-facebook-f"></i></button>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <button class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></button>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
