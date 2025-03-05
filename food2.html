@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: rgb(179, 215, 242);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: rgb(105, 161, 245);
+            position: relative;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bolder;
+            display: flex;
+            align-items: center;
+            font-style: oblique;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo span {
+            color: red;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 30px;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 150px;
+            z-index: 1000;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .dropdown-menu a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .image-section img {
+            width: 300px;
+            border-radius: 20%;
+        }
+
+        .text-section {
+            max-width: 500px;
+            margin-left: 40px;
+        }
+
+        .discount {
+            background-color: rgb(95, 156, 213);
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .text-section h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .text-section p {
+            font-size: 16px;
+            color: gray;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .explore-btn {
+            background-color: rgba(102, 130, 224, 0.6);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* New Section */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .service-item {
+            max-width: 900px;
+        }
+
+        .service-item img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .service-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .menu-button {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .menu-button a {
+            background-color: rgb(169, 42, 247);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .menu-header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+            height: 500px;
+            gap: 1px;
+            margin:auto;
+            background-color: #fff;
+        }
+
+        /*.flex-container div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }*/
+
+        .flex-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .flex-container img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .row1 {
+            display: flex;
+            width: 100%;
+            height: 60%;
+            gap: 10px;
+        }
+
+        .item1 {
+            flex: 2;
+        }
+
+        .item2 {
+            flex: 1;
+        }
+
+        .item3 {
+            flex: 1;
+            height: 100%;
+        }
+
+        .row2 {
+            display: flex;
+            width: 100%;
+            height: 40%;
+            gap: 10px;
+        }
+
+        .item4, .item5 {
+            flex: 1.5;
+        }
+
+        .item6 {
+            flex: 0.5,0.;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="Hamburger on a white background food photograph _ Premium AI-generated image.jpeg" alt="Logo"> FOODIE
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-section">
+            <img src="foodimg.jpeg" alt="Food Bowl">
+        </div>
+        <div class="text-section">
+            <div class="discount">Grab your offers</div>
+            <h1>come to have a burger</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, minima eaque! Aspernatur alias aperiam dolores eos, veritatis beatae id dignissimos vitae fuga autem amet dolorum, reiciendis molestiae, placeat nam quasi!</p>
+            <a href="#" class="explore-btn">Explore Now</a>
+        </div>
+    </div>
+
+    <!-- New Services Section -->
+    <div class="services">
+        <div class="service-item">
+            <img src="discount.jpeg" alt="Discount">
+            <h3>Discount here</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore repudiandae ducimus consectetur unde aut nam!</p>
+        </div>
+        <div class="service-item">
+            <img src="healthy.jpeg" alt="Healthy Food">
+            <h3>Tasty burger</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem minima aliquid reiciendis exercitationem eligendi.</p>
+        </div>
+        <div class="service-item">
+            <img src="fast.jpeg" alt="Fast Delivery">
+            <h3>Fast Delivery</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta a officiis, sit corporis ratione eligendi.</p>
+        </div>
+    </div>
+
+    <!-- Menu Button -->
+    <div class="menu-button">
+        <a href="#">Burger menu</a>
+    </div>
+
+    <!-- Menu Header -->
+    <div class="menu-header">
+        Have a great burger
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("dropdownMenu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+
+        // Close menu if clicked outside
+        document.addEventListener("click", function(event) {
+            var menu = document.getElementById("dropdownMenu");
+            var menuIcon = document.querySelector(".menu-icon");
+            if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+                menu.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>
+
