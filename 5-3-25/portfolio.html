@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: -px;
+        }
+
+        .header .info {
+            text-align: left;
+        }
+
+        .header .info h2 {
+            margin-bottom: 5px;
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+
+        /* Horizontal Line */
+        .line {
+            width: 80%;
+            height: 2px;
+            background-color: #333;
+            margin: 20px 0;
+        }
+
+        /* Education Section */
+        .education-container {
+            width: 80%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .education-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .education-box {
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Skills Section */
+        .skills-container {
+            width: 80%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .skills-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skills-box {
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        .footer {
+            width: 80%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .footer .social-icons {
+            margin-top: 10px;
+        }
+
+        .footer a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #1da1f2;
+        }
+
+        .footer svg {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="info">
+            <h2>Somasundaram T</h2>
+            <p>CSE with DATASCIENCE</p>
+            <p>Sathyabama University</p>
+        </div>
+        <img src="passportsize.jpg" alt="Your Photo">
+    </div>
+
+    <!-- Horizontal Line -->
+    <div class="line"></div>
+
+    <!-- Education Section -->
+    <div class="education-container">
+        <h2>Education</h2>
+        <div class="education-grid">
+            <div class="education-box">
+                <h3>10th Grade</h3>
+                <p>
+                    Tamil: 90<br>
+                    English: 95<br>
+                    Physics: 99<br>
+                    Maths: 100<br>
+                    Social: 99
+                </p>
+            </div>
+            <div class="education-box">
+                <h3>12th Grade</h3>
+                <p>
+                    Tamil: 99<br>
+                    English: 89<br>
+                    Maths: 100<br>
+                    Physics: 95<br>
+                    Chemistry: 98<br>
+                    Biology: 94
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills-container">
+        <h2>Additional Information</h2>
+        <div class="skills-grid">
+            <div class="skills-box">
+                <h3>Hobbies</h3>
+                <p>Reading, Gaming, Traveling</p>
+            </div>
+            <div class="skills-box">
+                <h3>Technical Skills</h3>
+                <p>Python, Java, HTML, CSS, Machine Learning</p>
+            </div>
+            <div class="skills-box">
+                <h3>Extra-Curricular Activities</h3>
+                <p>Volunteering, Sports, Coding Competitions</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p><a href="mailto:somusundaroff@gmail.com">Contact: somusundaroff@gmail.com</a></p>
+        <div class="social-icons">
+            <a href="#"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M22 12A10 10 0 1 0 12 22V14h-3v-3h3V9.5a4 4 0 0 1 4-4h3v3h-2a1 1 0 0 0-1 1V11h3l-1 3h-2v8A10 10 0 0 0 22 12z"/></svg></a>
+           
+            <a href="#"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm4 4v10h3V7H7zm5 0v10h3V7h-3zm5 0v10h3V7h-3z"/></svg></a>
+        </div>
+    </div>
+
+</body>
+</html>

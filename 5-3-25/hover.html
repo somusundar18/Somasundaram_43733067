@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.flex-container{
+    display: flex;
+    background-color: rgb(65, 70, 74);
+
+}
+
+.flex-container > div {
+    background-color: rgb(123, 125, 99);
+    margin: 10px;
+    padding: 40px;
+    font-size: 20px;
+}
+
+.image-container {
+    display: flex;
+    gap: 2px;
+}
+
+.image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin: 5px;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+</style>
+
+<body>
+
+<h1>Flex Box</h1>
+<p>this is called flexbox</p>
+
+<div class="flex-container">
+    <div type="button">ironman</div>
+    <div>spiderman</div>
+    <div>batman</div>
+</div>
+<br><br><br>
+
+<div class="image-container">
+    <img src="Captain America.jpeg" alt="Image 1" class="image" width="20px">
+    <img src="ironman.jpeg" alt="Image 2" class="image">
+    <img src="hulk.jpeg" alt="Image 3" class="image">
+    
+</div>
+
+
+</body>
+</html>
