@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>counter</title>
+    </head>
+    <style>
+        
+    </style>
+    <body>
+        <center>
+        <h1>counter</h1>
+        <div>
+            <p id="result" style=" font-size: 150px; border-radius: 150%;background-color: blue;margin-top: 10;margin-left: 675px; margin-right: 675px;">0</p>
+            <button onclick="add()" style=" font-size: 50px; border-radius: 150%;background-color: rgb(177, 177, 220);margin-left: 675px; margin-right: 675px;">+1</button>
+            <button onclick="sub()" style=" font-size: 50px; border-radius: 150%;background-color: rgb(177, 177, 220);margin-left: 670px; margin-right: 670px;">-1</button>
+            <button onclick="reset()" style=" font-size: 30px; border-radius: 50%;background-color: rgb(177, 177, 220);margin-left: 675px; margin-right: 675px;">reset</button>
+        </div>
+        </center>
+        <script>
+            let count=0
+            const result=document.getElementById('result')
+
+            function add(){
+                count++
+                result.innerHTML=count
+            }
+            function sub(){
+                count--
+                result.innerHTML=count
+            }
+            function reset(){
+                count=0
+                result.innerHTML=count
+            }
+
+
+
+
+
+
+              
+            document.getElementById('result').innerHTML=count
+
+
+        </script>
+        
+    </body>
+   
+</html>
