@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print </title>
+</head>
+<body>
+
+    <div id="output"></div> 
+
+    <script>
+        let outputDiv = document.getElementById("output");
+        let htmlData = ""; 
+        for (let i = 1; i <= 100; i++) {
+            htmlData += `<p>${i}. Hello JS</p>\n`;
+        }
+
+        outputDiv.innerHTML = htmlData; 
+    </script>
+
+</body>
+</html>

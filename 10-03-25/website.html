@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Montserrat Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <title>Som website</title>
+        <style>
+            body{
+                padding: 0px;
+                margin: 0px;
+                font-family: "Montserrat", sans-serif;
+                flex-wrap: wrap;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #d1bef798;
+            }
+            .navbar{
+                height: 50px;
+                width: 100%;
+                background-color:#12121200;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .navbar-brand{
+                height: 30px;
+                width: 60px;
+                background-color: #12121200;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 1px;
+
+            }
+            .navbar-info{
+                height: 30px;
+                margin:10px;
+                background-color: #12121200;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                
+                
+                
+            }
+            .navbar-info > a{
+                padding: 10px;
+                color: black;
+                text-decoration: none;
+            }
+            .navbar-signup{
+                height: 30px;
+                
+                background-color:#12121200;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                
+            }
+            .btn-signup{
+                background-color: #12121200;
+                padding: 5px 15px;
+                border: 1px solid #121212;
+                border-radius: 10px;
+                margin: 10px;
+
+            }
+            .poster{
+                width: 80%;
+                height: 500px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                border-radius: 50px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .poster:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+            }
+            
+        
+
+            
+            .poster-info{
+                width: 100%;
+                height: 500px;
+                background-color: rgb(53, 130, 198);
+                margin-top: -504px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                
+            }
+
+            .poster-info > h1, .poster-info > p {
+                width: 70%;
+            }
+            .btn-view{
+                background-color: #e2e1ab;
+                padding: 10px 15px;
+                border: 2px solid #121212;
+                border-radius: 10px;
+                margin: 10px;
+                text-align: start;
+
+
+            }
+            .ex-container{
+                width: 80%;
+                height: 50%;
+                background-color:#12121200;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+            }
+            .flex-box{
+                width: 80%;
+                height: 300px;
+                
+                display: flex;
+                flex-direction: row;
+                justify-content:space-evenly;
+                align-items:center;
+                background-color: #12121200;
+                overflow-x: scroll;
+                gap: 150px;
+                
+            }
+            .flex-items{
+                border-radius: 50%;
+                height: 170px;
+                
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+           
+
+            .flex-items:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+            }
+            .dish-container{
+            width: 80%;
+            margin:auto;
+            font-size: 20px;
+            flex-wrap: wrap;
+            
+        }
+
+        .dishes{
+            width: 100%;
+            height: auto;
+           display: flex;
+           flex-wrap: wrap;
+           gap: 40px;
+           justify-content: start;
+           
+        }
+
+        .dish-image{
+            width: 100%;
+            object-fit:cover;
+            border-radius: 10%;
+        }
+
+        .dish{
+            width: 30%;
+            background-color: rgba(196, 196, 229, 0.588);
+            border-radius: 10%;
+           flex-direction: row;
+
+        }
+
+        .dish-content{
+            flex-wrap: wrap;
+            flex-direction: column;
+            display: flex;
+            margin: 5%;
+            font-size: 15px;
+            
+        }
+              
+
+                
+
+            
+            @media only screen and (max-width:415px){
+                .navbar-info, .poster-info > p{
+                    display:none
+                }
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-brand">
+                <img src="./assets/Food-Logo.jpg" height="40px">
+                <p>SOM</p>
+            </div>
+            <div class="navbar-info">
+                <a href="/">Home</a>
+                <a href="/">Menu</a>
+                <a href="/">Contact Us</a>
+            </div>
+            <div class="navbar-signup">
+                <img src="/assets/icons8-bag-50.png" height="20px">
+                <button class="btn-signup">signup</button>
+                
+            </div>
+        </div>
+        <div class="poster">
+            <img src="./assets/foodback3.jpeg" style="object-fit: cover; width: 100%; height: 100%; border-radius: 20px;">
+            <div class="poster-info">
+                <h1 style="color: aliceblue;">Don't wait just Eat!!!!</h1>
+                <p style="color: aliceblue; ">"Discover a world of delicious flavors with our food website! From mouthwatering recipes to expert cooking tips, we bring you the best in food inspiration. Explore diverse cuisines, find healthy meal ideas, and satisfy your cravings with easy-to-follow guides. Whether you're a home cook or a foodie, our website is your ultimate culinary destination!"</p>
+                <button class="btn-view" style="background-color: bisque;">view menu</button>
+            </div>
+        </div>
+        <div class="ex-container">
+            <div>
+                <h1>Explore Our Menu</h1>
+                <p>"Explore our menu and indulge in a variety of delicious flavors! From savory appetizers to mouthwatering main courses and delightful desserts, we have something for everyone. Whether you're craving classic favorites or exciting new dishes, our carefully crafted menu promises a memorable dining experience. Treat yourself to a feast of flavors and satisfy your cravings today!"</p>
+            </div>
+        </div>
+        <div class="flex-box">
+            
+                <div class="flex-items">
+                    <img src="./assets/roll1.jpeg" alt="" height="170px" style="border-radius: 50%;"  >
+                    <p style="text-align: center;">Roll</p>
+                </div>
+                <div class="flex-items">
+                    <img src="./assets/salad1.jpeg" alt="" height="170px" style="border-radius: 50%;"  >
+                    <p style="text-align: center;">salad</p>
+                </div>
+                <div class="flex-items">
+                    <img src="./assets/pasta1.jpeg" alt="" height="170px" style="border-radius: 50%;"  >
+                    <p style="text-align: center;">Pasta</p>
+                </div>
+                <div class="flex-items">
+                    <img src="./assets/sand1.jpeg" alt="" height="170px" style="border-radius: 50%;"  >
+                    <p style="text-align: center;">Sandwich</p>
+                </div>
+                <div class="flex-items">
+                    <img src="./assets/pizza1.jpeg" alt="" height="170px" style="border-radius: 50%;"  >
+                    <p style="text-align: center;">Pizza</p>
+               
+                </div>
+            
+            
+            
+
+        </div>
+        <script>
+            // Array of food items with image sources and names
+            const foodItems = [
+                { src: "./assets/pasta1.jpeg", name: "Pasta" },
+                { src: "./assets/pizza1.jpeg", name: "Pizza" },
+                { src: "./assets/salad1.jpeg", name: "Salad" },
+                { src: "./assets/roll1.jpeg", name: "Roll" },
+                { src: "./assets/sand1.jpeg", name: "Sandwich" }
+            ];
+        
+            const foodContainer = document.getElementById("foodContainer");
+        
+            // Loop through foodItems array and create elements dynamically
+            foodItems.forEach(food => {
+                const foodDiv = document.createElement("div");
+                foodDiv.classList.add("scrolling-food");
+        
+                const img = document.createElement("img");
+                img.src = food.src;
+                img.alt = food.name;
+                img.style.borderRadius = "50%";
+                img.style.width = "150px";
+                img.style.height = "150px";
+        
+                const p = document.createElement("p");
+                p.textContent = food.name;
+                p.style.fontSize = "20px";
+        
+                foodDiv.appendChild(img);
+                foodDiv.appendChild(p);
+                foodContainer.appendChild(foodDiv);
+            });
+            /*
+            
+            const dishimg = ["./assets/sand1.jpeg","./assets/sand2.jpeg","./assets/sand3.jpeg","./assets/sand4.jpeg","./assets/sand1.jpeg"]
+            const dishtext = ["Sandwhich1","Sandwhich2","Sandwhich3","Sandwhich4","Sandwhich5"]
+
+            let htmldishdata = ""
+            
+            for(let i = 0; i < dishimg.length; i++){
+                htmldishdata = htmldishdata +
+                `
+                <div class="dish">
+                    <img class="dish-image" src="/assets/sand4.jpeg" alt="">
+                    <div class="dish-content">
+                        <h2>sandwich</h2>
+                        <p>description</p>
+                        <h3>100rs</h3>
+                    </div>
+                   
+
+                </div>
+                `
+            }
+
+            console.log(htmldishdata)
+            document.getElementsByClassName("dish")[0].innerHTML = htmldishdata
+            */
+           
+        </script>
+            
+
+        
+            
+    
+
+    </body>
+</html>

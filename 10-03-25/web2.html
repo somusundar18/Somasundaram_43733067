@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Som Website</title>
+    
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+                padding: 0px;
+                margin: 0px;
+                font-family: "Montserrat", sans-serif;
+                flex-wrap: wrap;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #d1bef798;
+            }
+            .navbar{
+                height: 50px;
+                width: 100%;
+                background-color:#12121200;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .navbar-brand{
+                height: 30px;
+                width: 60px;
+                background-color: #12121200;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 1px;
+
+            }
+            .navbar-info{
+                height: 30px;
+                margin:10px;
+                background-color: #12121200;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                
+                
+                
+            }
+            .navbar-info > a{
+                padding: 10px;
+                color: black;
+                text-decoration: none;
+            }
+            .navbar-signup{
+                height: 30px;
+                
+                background-color:#12121200;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                
+            }
+            .btn-signup{
+                background-color: #12121200;
+                padding: 5px 15px;
+                border: 1px solid #121212;
+                border-radius: 10px;
+                margin: 10px;
+
+            }
+            .poster{
+                width: 80%;
+                height: 500px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                border-radius: 50px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .poster:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+            }
+            
+        
+
+            
+            .poster-info{
+                width: 100%;
+                height: 500px;
+                background-color: rgb(53, 130, 198);
+                margin-top: -504px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                
+            }
+
+            .poster-info > h1, .poster-info > p {
+                width: 70%;
+            }
+            .btn-view{
+                background-color: #e2e1ab;
+                padding: 10px 15px;
+                border: 2px solid #121212;
+                border-radius: 10px;
+                margin: 10px;
+                text-align: start;
+
+
+            }
+            .ex-container{
+                width: 80%;
+                height: 50%;
+                background-color:#12121200;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+            }
+            .flex-box{
+                width: 80%;
+                height: 300px;
+                
+                display: flex;
+                flex-direction: row;
+                justify-content:space-evenly;
+                align-items:center;
+                background-color: #12121200;
+                overflow-x: scroll;
+                gap: 150px;
+                
+            }
+            .flex-items{
+                border-radius: 50%;
+                height: 170px;
+                
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+           
+
+            .flex-items:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+            }
+            .dish-container{
+            width: 80%;
+            margin:auto;
+            font-size: 20px;
+            flex-wrap: wrap;
+            
+        }
+
+        .dishes{
+            width: 100%;
+            height: auto;
+           display: flex;
+           flex-wrap: wrap;
+           gap: 40px;
+           justify-content: start;
+           
+        }
+
+        .dish-image{
+            width: 100%;
+            object-fit:cover;
+            border-radius: 10%;
+        }
+
+        .dish{
+            width: 30%;
+            background-color: rgba(196, 196, 229, 0.588);
+            border-radius: 10%;
+           flex-direction: row;
+
+        }
+
+        .dish-content{
+            flex-wrap: wrap;
+            flex-direction: column;
+            display: flex;
+            margin: 5%;
+            font-size: 15px;
+            
+        }
+
+        @media only screen and (max-width: 415px) {
+            .navbar-info, .poster-info p {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="navbar-brand">
+            <img src="./assets/Food-Logo.jpg" height="40px">
+            <p>SOM</p>
+        </div>
+        <div class="navbar-info">
+            <a href="/">Home</a>
+            <a href="/">Menu</a>
+            <a href="/">Contact Us</a>
+        </div>
+        <div class="navbar-signup">
+            <img src="/assets/icons8-bag-50.png" height="20px">
+            <button class="btn-signup">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Poster Section -->
+    <div class="poster">
+        <img src="./assets/foodback3.jpeg" style="object-fit: cover; width: 100%; height: 100%; border-radius: 20px;">
+        <div class="poster-info">
+            <h1 style="color: aliceblue;">Don't wait, just Eat!</h1>
+            <p style="color: aliceblue;">"Discover a world of delicious flavors with our food website.Indulge in a world of mouthwatering delights! From crispy rolls to cheesy pizzas, fresh salads to creamy pastas, we bring you the best flavors, all in one place. Explore our menu and treat yourself to delicious meals made with love. Don’t wait—just eat! Order now and satisfy your cravings! 😋""</p>
+            <button class="btn-view">View Menu</button>
+        </div>
+    </div>
+
+    <!-- Explore Menu -->
+    <div class="ex-container">
+        <h1>Explore Our Menu</h1>
+        <p>"Explore our menu and indulge in a variety of delicious flavors!"</p>
+    </div>
+
+    <!-- Scrollable Food Items -->
+    <div class="flex-box">
+        <div class="flex-items" data-item="Roll"><img src="./assets/roll1.jpeg" height="170px" style="border-radius: 50%;"><p>Roll</p></div>
+        <div class="flex-items" data-item="Salad"><img src="./assets/salad1.jpeg" height="170px" style="border-radius: 50%;"><p>Salad</p></div>
+        <div class="flex-items" data-item="Pasta"><img src="./assets/pasta1.jpeg" height="170px" style="border-radius: 50%;"><p>Pasta</p></div>
+        <div class="flex-items" data-item="Sandwich"><img src="./assets/sand1.jpeg" height="170px" style="border-radius: 50%;"><p>Sandwich</p></div>
+        <div class="flex-items" data-item="Pizza"><img src="./assets/pizza1.jpeg" height="170px" style="border-radius: 50%;"><p>Pizza</p></div>
+    </div>
+
+    <!-- Related Items -->
+    <div class="dish-container">
+        <h2>Related Items</h2>
+        <div class="dishes" id="relatedDishes"></div>
+    </div>
+
+    <script>
+        const relatedItems = {
+            "Roll": [
+        { src: "./assets/roll2.jpeg", name: "Veg Roll", price: "100rs" },
+        { src: "./assets/roll3.jpeg", name: "Paneer Roll", price: "120rs" },
+        { src: "./assets/roll4.jpeg", name: "Chicken Roll", price: "150rs" },
+        { src: "./assets/roll5.jpeg", name: "Egg Roll", price: "130rs" }
+    ],
+    "Salad": [
+        { src: "./assets/salad2.jpeg", name: "Greek Salad", price: "130rs" },
+        { src: "./assets/salad3.jpeg", name: "Caesar Salad", price: "140rs" },
+        { src: "./assets/salad4.jpeg", name: "Fruit Salad", price: "110rs" },
+        { src: "./assets/salad5.jpeg", name: "Veggie Salad", price: "120rs" }
+    ],
+    "Pasta": [
+        { src: "./assets/pasta2.jpeg", name: "Red Sauce Pasta", price: "170rs" },
+        { src: "./assets/pasta3.jpeg", name: "White Sauce Pasta", price: "180rs" },
+        
+    ],
+    "Sandwich": [
+        { src: "./assets/sand2.jpeg", name: "Cheese Sandwich", price: "130rs" },
+        { src: "./assets/sand3.jpeg", name: "Veg Sandwich", price: "120rs" },
+        { src: "./assets/sand4.jpeg", name: "Club Sandwich", price: "150rs" },
+        { src: "./assets/sand5.jpeg", name: "Grilled Sandwich", price: "140rs" }
+    ],
+    "Pizza": [
+        { src: "./assets/pizza2.jpeg", name: "Pepperoni Pizza", price: "300rs" },
+        
+    ]
+};
+
+        document.querySelectorAll('.flex-items').forEach(item => {
+            item.addEventListener('click', function () {
+                let foodName = this.getAttribute('data-item');
+                const relatedDishes = document.getElementById("relatedDishes");
+                relatedDishes.innerHTML = relatedItems[foodName].map(item =>
+                    `<div class="dish"><img class="dish-image" src="${item.src}"><div class="dish-content"><h2>${item.name}</h2><h3>${item.price}</h3></div></div>`
+                ).join('');
+            });
+        });
+    </script>
+
+</body>
+</html>
