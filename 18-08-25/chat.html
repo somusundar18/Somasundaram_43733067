@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Components</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    /* Container for explanation */
+    .legend {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin: 12px 0;
+    }
+
+    .color-box {
+      width: 25px;
+      height: 25px;
+      margin-right: 12px;
+      border: 2px solid transparent;
+    }
+
+    /* Colors for each item */
+    .margin { border: 2px dashed #333; background: #fff; }
+    .border { background: orange; }
+    .padding { background: gold; }
+    .content { background: dodgerblue; }
+
+    .legend-text {
+      font-size: 16px;
+    }
+
+    .legend-text strong {
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Box Model Components</h2>
+
+  <div class="legend">
+    <div class="legend-item">
+      <div class="color-box margin"></div>
+      <div class="legend-text"><strong>Margin</strong> - Space outside the border (transparent)</div>
+    </div>
+    <div class="legend-item">
+      <div class="color-box border"></div>
+      <div class="legend-text"><strong>Border</strong> - Surrounds the padding and content</div>
+    </div>
+    <div class="legend-item">
+      <div class="color-box padding"></div>
+      <div class="legend-text"><strong>Padding</strong> - Space between border and content</div>
+    </div>
+    <div class="legend-item">
+      <div class="color-box content"></div>
+      <div class="legend-text"><strong>Content</strong> - Actual content of the box</div>
+    </div>
+  </div>
+
+</body>
+</html>
+
