@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+
+        <title>trail web</title>
+        <style>
+            .firstbox{
+                width: 400px;
+                height: 400px;
+                margin: 0 auto;
+                margin-top: 5px;
+                display: flex;
+                background-color: rgb(251, 218, 4);
+                border: 3px solid brown;
+                
+
+            }
+            .secondbox{
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                margin-top: 50px;
+                display: flex;
+                background-color: rgb(59, 7, 216);
+                justify-content: center;
+                align-items: center;
+                color: white;
+                
+            }
+            
+            .toogle{
+                width: 1000px;
+                height:fit-content;
+                margin: 0 auto;
+                display:flex;
+                background-color: rgb(210, 206, 206);
+                justify-content:space-between;
+                flex-direction: column;
+
+                align-items:flex-start;
+                padding: 20px;
+                margin-bottom:50px; ;
+             
+            }
+            .lastbox {
+
+                width: 1000px;
+                height: 400px;
+                margin: 0 auto;
+                display: flex;
+                background-color: rgb(192, 190, 190);
+                padding: 20px;     
+                flex-direction: column;    
+                justify-content: flex-start;        
+                
+}
+
+            .smallbox1{
+                width: fit-content;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+            }
+            .whitebox{
+                width: 50px;
+                height:50px;
+                background-color: white;
+                border: 2px dashed black;
+                margin-left: 50px;
+            }
+            .box2{
+                width: 50px;
+                height:50px;
+                background-color: orange;
+                border: 2px solid black;
+                margin-left: 50px;
+            }
+            .box3{
+                width: 50px;
+                height:50px;
+                background-color: rgb(255, 251, 0);
+                border: 2px solid black;
+                margin-left: 50px;
+            }
+            .box4{
+                width: 50px;
+                height:50px;
+                background-color: rgb(0, 64, 255);
+                border: 2px solid black;
+                margin-left: 50px;
+            }
+            .row {
+                display: flex;
+                align-items: center;
+                gap: 40px;   
+            }    
+
+        </style>
+ </head>       
+ <body>
+    <h1 style="text-align: center;">CSS Box Model Demonstration</h1>
+    
+        <div class="firstbox" >
+
+            <div class="secondbox">
+            <p style="font-size: 20px;">content</p>
+            </div>
+        </div>
+    
+    <div class="toogle">
+    <div class="row">
+        <label>Margin:</label>
+        <input type="range" min="0" max="100" value="50">
+        <br>
+        <br>
+        <br>
+    </div><br><br><br>
+    <div class="row">
+        <label>Border :</label>
+        <input type="range" min="0" max="100" value="50">
+        <br> 
+        <br>
+        <br>
+    </div><br><br><br>
+    <div class="row">
+        <label>Padding:</label>
+        <input type="range" min="0" max="100" value="50">
+    </div>
+</div>
+
+    <div class="lastbox">
+        <h1 style="text-align: center;">box model Components</h1>
+        <div class="smallbox1">
+            <div class="whitebox">
+        </div>
+        <p>Margin-space outside the border(transparent)</p>
+        </div>
+        <div class="smallbox1">
+            <div class="box2"></div>
+            <p>Border-surronds the padding and conetent</p>
+        </div>
+        <div class="smallbox1">
+            <div class="box3"></div>
+            <p>Padding-Space between border and content</p>
+
+        </div>
+        <div class="smallbox1">
+            <div class="box4"></div>
+            <p>Content-Actual content of the box</p>
+        </div>
+    </div>
+    
+    
+ </body>
